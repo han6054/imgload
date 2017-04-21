@@ -1,0 +1,39 @@
+```javascript
+ var Imges = document.getElementsByTagName("img");
+ var imgArr = [
+        "http://img2.cheshi-img.com/misc/hanjiajun/201701/586e26ca18a4c.png",
+        "http://img2.cheshi-img.com/misc/hanjiajun/201701/586e26ca18b1c.png",
+        "http://img2.cheshi-img.com/misc/hanjiajun/201701/586e2706a2d00.png",
+        "http://img2.cheshi-img.com/misc/hanjiajun/201701/586e2723b2406.png",
+        "http://img2.cheshi-img.com/misc/hanjiajun/201701/586e27398ce37.png",
+        "http://img2.cheshi-img.com/misc/hanjiajun/201701/586e274904084.png",
+        "http://img2.cheshi-img.com/misc/hanjiajun/201701/586e2761abac4.png",
+        "http://img1.cheshi-img.com/misc/hanjiajun/201701/586e276f496cc.png",
+        "http://img2.cheshi-img.com/misc/hanjiajun/201701/586e277d8a919.png",
+        "http://img1.cheshi-img.com/misc/hanjiajun/201701/586e278bba260.png"
+   ];
+    var num = 0;
+       for(var i = 0;i<Imges.length;i++){
+        var oImg = new  Image();
+        oImg.src= Imges[i].src;
+        oImg.onload = function(){
+            num++;
+            var per = Math.ceil(num/Imges.length*100).toString().split("");
+            var per_deg = 230*num/Imges.length;
+            aImgspan[1].src = imgArr[parseInt(per[0])];
+            aImgspan[2].src= imgArr[parseInt(per[1])];
+            finger.style.webkitTransform = "rotate("+per_deg+275+"deg)";
+
+            if(num == Imges.length){
+                aImgspan[0].src = imgArr[1];
+                aImgspan[1].src = imgArr[0];
+                aImgspan[2].src= imgArr[0];
+                finger.style.webkitTransform = "rotate(505deg)";
+                setTimeout(function(){
+                    $(".loading_box").fadeOut();
+                    con.style.webkitAnimation = "bounceInRight 2s";
+                },500)
+            }
+        }
+    }
+    
