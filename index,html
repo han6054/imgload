@@ -7,9 +7,7 @@
     .loading{position:absolute;width: 22%;top:49%;left:29.4%;animation: loading 1s linear infinite;-webkit-animation: loading 1s linear infinite }
     .loading_word{position:absolute;top:53%;left:30%;font-size:.36rem;}
     .loading_word span{float: left;width: 16%;margin-right: 6%;}
-    .finger{position: absolute;width:4.4%;left:50%;top:50%;margin-left:-3.2%;margin-top:-6.5rem;transform-origin:50% 100%;-webkit-transform-origin:50% 100%;
-        transform: rotate(275deg);
-    }
+    .finger{position: absolute;width:4.4%;left:50%;top:50%;margin-left:-3.2%;margin-top:-6.5rem;transform-origin:50% 100%;-webkit-transform-origin:50% 100%;transform: rotate(275deg);}
 </style>
 <body>
 <div class="loading_box">
