@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-```javascript
+<body>
+</body>
+<script type="text/javascript">
  var Imges = document.getElementsByTagName("img");
  var imgArr = [
         "http://img2.cheshi-img.com/misc/hanjiajun/201701/586e26ca18a4c.png",
@@ -39,7 +40,7 @@
             }
         }
     }
-    ```
+</script>
 </html>
                          
                                           
