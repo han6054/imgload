@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 ```javascript
  var Imges = document.getElementsByTagName("img");
  var imgArr = [
@@ -36,4 +39,7 @@
             }
         }
     }
-    
+    ```
+</html>
+                         
+                                          
